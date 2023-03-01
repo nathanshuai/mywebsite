@@ -1,0 +1,100 @@
+@import url(./reset.css);
+
+:root {
+  --app-dark-bg: #1a1d28;
+  --app-green: #33ab4e;
+  --app-purple: #833cff;
+  --app-orange: #e4854e;
+  --app-blue: #3c57ff;
+  --app-blue-hover: #364ee6;
+  --app-red: #ff3c57;
+  --app-red-hover: #ff2846;
+}
+
+.container {
+  width: min(100% - 30px,1080px);
+  margin-inline: auto;
+}
+
+body {
+  background-color: var(--app-dark-bg);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--app-orange);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 0;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 56px;
+}
+
+nav ul li a {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--app-orange);
+  text-decoration: none;
+  letter-spacing: 0.2px; 
+  transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #007fff;
+}
+
+header div nav ul li + li {
+  margin-left: 20px;
+}
+
+.icon.one {
+  display: none;
+  color: var(--app-orange);
+  line-height: 56px;
+  font-size: 20px
+}
+
+.icon:hover {
+  color: #007fff;
+}
+
+@media (max-width:768px) {
+  .column {
+      width: calc(50% - 10px);
+  }
+
+  nav {
+      display: none;
+  }
+
+  .icon.one {
+      display: inline;
+  }
+}
+
+@media (max-width:480px) {
+  .column {
+      width: 100%;
+  }
+
+  nav {
+      display: none;
+  }
+
+  .icon.one {display: block;}
+}
+
