@@ -1,6 +1,6 @@
 ### Hi there 👋 Welcome 
 
-Click [here]( ) to see my secret website.
+Click [here](https://nathanshuai.github.io/mywebsite/) to see my secret website.
 
 <br />
 
