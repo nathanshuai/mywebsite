@@ -97,10 +97,6 @@ header div nav ul li + li {
     font-size: 14px;
     line-height: 1.5;
   }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 
   .headerlist {
     display: none;
@@ -347,14 +343,16 @@ footer div p {
     height: auto;
     margin-top: 320px;
   }
+
   h2 {
     width: min(100% - 30px,1080px);
     margin-left: -40px;
     margin-top: -260px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .imgone {
+    margin-top: 30px;
     margin-left: 260px;
     max-width: 100%;
   }
@@ -369,7 +367,6 @@ footer div p {
     display: none;
   }
   
-  
   .fa-brands {
     font-size: 12px;
   }
@@ -377,9 +374,21 @@ footer div p {
   footer {
     margin-top: 140px;
   }
+
+  nav ul li a {
+    font-size: 10px;
+    font-weight: 100;
+    color: var(--app-orange);
+    text-decoration: none;
+    letter-spacing: 0.1px; 
+    transition: color 0.25s ease-in-out;
+  }
 }
   
-
+.headerlist.show {
+  display: block;
+  font-size: 10px;
+}
 
 @media (max-width:480px) {
   .text {
