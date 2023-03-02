@@ -72,31 +72,52 @@ header div nav ul li + li {
   color: #007fff;
 }
 
+@media (max-width:1080px) {
+  main p {
+    font-size: 18px;
+  }
+}
+
 @media (max-width:768px) {
-  .column {
-      width: calc(50% - 10px);
+  main p {
+    font-size: 12px;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
-  nav {
-      display: none;
+  .headerlist {
+    display: none;
   }
 
   .icon.one {
-      display: inline;
+    display: inline;
+  }
+
+  .fa-brands {
+    font-size: 12px;
   }
 }
 
 @media (max-width:480px) {
-  .column {
-      width: 100%;
+  main p {
+    font-size: 8px;
   }
 
-  nav {
-      display: none;
+  .headerlist {
+    display: none;
   }
 
   .icon.one {display: block;}
+
 }
+
+
 
 main {
   padding: 100px 0;
@@ -130,22 +151,22 @@ p {
 p:nth-child(1) {
   animation-delay: 1s;
   top: 20%;
-  left: 20%; /* delay the first paragraph by 1 second */
+  left: 20%; 
 }
 
 p:nth-child(2) {
   animation-delay: 2s; 
   top: 30%;
-  left: 50%;/* delay the second paragraph by 2 seconds */
+  left: 50%;
 }
 
 p:nth-child(3) {
   animation-delay: 3s;
   top: 30%;
-  left: 80%; /* delay the third paragraph by 3 seconds */
+  left: 80%; 
 }
 
-/* repeat for each paragraph up to 12 */
+
 p:nth-child(4) {
   animation-delay: 4s;
   top: 50%;
@@ -208,10 +229,10 @@ p:nth-child(13) {
 
 @keyframes fadeIn {
   from {
-    opacity: 0; /* start with 0 opacity */
+    opacity: 0; 
   }
   to {
-    opacity: 1; /* end with 1 opacity */
+    opacity: 1; 
   }
 }
 
@@ -220,30 +241,100 @@ p:nth-child(13) {
   margin-inline: auto;
   margin-top: 250px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  
   color: #e4854e;
 }
 
+
+h2 {
+   margin-top: -100px;
+   margin-left: -900px;
+}
 .text {
   margin-top: 550px;
   margin-right: 900px;
   font-size: 22px;
 }
+
 .Profile img {
   width: 30%;
   height: auto;
 }
 
-h2 {
-  margin-bottom: 10px;
-  margin-top: 100px;
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+
+
 
 .imgone {
   margin-left: 520px;
+  max-width: 100%;
 }
 
 .imgtwo {
   margin-left: 750px;
   margin-top: -250px;
 }
+footer {
+  margin-top: 500px;
+}
+.icon.three {
+  display: grid;
+  color: #e0a989;
+  line-height: 60px;
+}
+
+footer div nav ul li {
+  margin-left: 15px
+}
+
+.fa-brands {
+  font-size: 24px;
+}
+
+footer div p {
+  color: #ebeef0;
+  text-decoration: none;
+}
+
+
+
+@media (max-width:768px) {
+  .text {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    height: auto;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .fa-brands {
+    font-size: 12px;
+  }
+}
+  
+
+
+@media (max-width:480px) {
+  .text {
+    max-width: 100%;
+    font-size: 8px;
+    line-height: 1.5;
+    height: auto;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .fa-brands {
+    font-size: 10px;
+  }
+}
+
